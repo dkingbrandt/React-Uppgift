@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+li {
+  display: inline;
+  list-style-type: none;
+
+  margin-left: 5%;
+  font-size: 105%;
+  padding-top: 10px;
+
+  font-family: "Lora", serif;
+}
+
+.headerList {
+  width: 100vw;
+  background-color: rgb(13, 97, 97);
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 20px;
+  /* position: -webkit-sticky; */
+  position: sticky;
+  top: 0px;
+
+  margin-bottom: 0px;
+  box-shadow: 0 0 5px 0 rgb(5, 5, 5);
+}
+
+.link {
+  color: #ffff;
+  text-decoration: none;
+}
+
+.headerBackgroundImg {
+  background-image: url("../img/binary.jpg");
+  width: 100vw;
+  height: 100px;
+  margin-bottom: -20px;
+}
+
+.logo {
+  width: 350px;
+  height: auto;
+  position: absolute;
+  top: -90px;
+  right: 50px;
+}
+
+.formHeader {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.322), 0 1px 1px #00000059;
+  z-index: 2;
+  position: absolute;
+  right: 35%;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(30, 97, 105);
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.322), 0 2px 20px #00000059;
+  color: white;
+  font-family: "Lora", serif;
+}
+.inputHeader {
+  width: 250px;
+  height: 30px;
+  margin: 1%;
+  box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.322), 0 2px 20px #00000059;
+  border: none;
+}
+.btnHeader {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 5px;
+  border-radius: 10px;
+  border: none;
+  color: #fdf7f7;
+  background-color: rgb(4, 46, 46);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.322), 0 1px 1px #00000059;
+  cursor: pointer;
+}
+
+.inloggBtnHeader {
+  width: 100px;
+  height: 40px;
+  margin: 6% 0 5% 5%;
+  border-radius: 10px;
+  border: none;
+  color: #fdf7f7;
+  background-color: rgb(4, 46, 46);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.322), 0 2px 20px #00000059;
+  cursor: pointer;
+}
+
+.failedLoggIn {
+  background-color: white;
+  color: black;
+}
+
+.popUp {
+  background-color: white;
+  width: 350px;
+  height: 150px;
+  position: absolute;
+  z-index: 3;
+  top: 300px;
+  left: 40%;
+  padding: 1% 2% 2% 2%;
+}
+.popupBtn {
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 35%;
+  background-color: rgba(13, 132, 211, 0.734);
+  border: none;
+  font-family: "Lora", serif;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1400px) {
+  .headerBackgroundImg {
+    height: 200px;
+  }
+  .logo {
+    width: 450px;
+    top: -110px;
+    right: 50px;
+  }
+}
